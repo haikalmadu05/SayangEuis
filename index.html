@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bucin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1>Selamat pagi sayangku!</h1>
+            <p id="datetime"></p>
+            <button id="showImagesButton">Klik ini dong 💖</button>
+        </div>
+        <p style="display: none;">Klik Kotaknya berurutan yaa cantik</p>
+        <div class="images" id="imagesContainer" style="display: none;">
+            <div class="image-container" data-index="0"><h1>?</h1></div>
+            <div class="image-container" data-index="1"><h1>?</h1></div>
+            <div class="image-container" data-index="2"><h1>?</h1></div>
+            <div class="image-container" data-index="3"><h1>?</h1></div>
+            <div class="image-container" data-index="4"><h1>?</h1></div>
+            <div class="image-container" data-index="5"><h1>?</h1></div>
+        </div>
+        <button id="giftButton" class="gift-button" style="display: none;">Kado buat kamu 🎁</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image"  style="width: 100px; height: 200px;">
+            <p id="modalCaption"></p>
+        </div>
+    </div>
+
+    <div id="snowflakes" class="snowflakes"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
